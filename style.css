@@ -1,4 +1,4 @@
-/* ===== RESET & BASE ===== */
+/* RESET & BASE */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -29,7 +29,7 @@ body {
   padding: 0 1.25rem;
 }
 
-/* ===== HEADER / PROFIL ===== */
+/* HEADER / PROFIL */
 .profile-section {
   background: var(--accent);
   color: white;
@@ -49,6 +49,7 @@ body {
   border-radius: 50%;
   border: 2px solid rgba(255,255,255,0.5);
   object-fit: cover;
+  display: block;
 }
 
 .profile-info h1 {
@@ -99,7 +100,7 @@ body {
 }
 .btn-link:hover { background: rgba(255,255,255,0.25); }
 
-/* ===== SECTIONS ===== */
+/* SECTIONS */
 .section {
   padding: 2.5rem 0;
   border-bottom: 1px solid var(--border);
@@ -115,7 +116,7 @@ body {
   border-bottom: 2px solid var(--accent-light);
 }
 
-/* ===== TIMELINE ===== */
+/* TIMELINE */
 .timeline { display: flex; flex-direction: column; gap: 1rem; }
 
 .timeline-item {
@@ -155,7 +156,7 @@ body {
   font-weight: 500;
 }
 
-/* ===== SKILLS ===== */
+/* SKILLS */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -171,7 +172,7 @@ body {
   border-radius: 99px;
 }
 
-/* ===== FILTER BAR ===== */
+/* FILTER BAR */
 .filter-bar {
   display: flex;
   gap: 0.75rem;
@@ -224,7 +225,7 @@ body {
 }
 .lang-btn:hover:not(.active) { border-color: var(--accent-mid); }
 
-/* ===== REPOS GRID ===== */
+/* REPOS GRID */
 .repos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -301,7 +302,7 @@ body {
 }
 .repo-link:hover { background: var(--accent-light); }
 
-/* ===== LOADING / ERROR ===== */
+/* LOADING / ERROR */
 .loading {
   display: flex;
   flex-direction: column;
@@ -332,7 +333,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* ===== LOAD MORE ===== */
+/* LOAD MORE */
 .load-more-wrap {
   text-align: center;
   padding: 1.5rem 0 0.5rem;
@@ -350,7 +351,7 @@ body {
 }
 .load-more-btn:hover { background: var(--accent-light); }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 .footer {
   text-align: center;
   padding: 1.5rem;
@@ -359,11 +360,16 @@ body {
   border-top: 1px solid var(--border);
 }
 
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
 @media (max-width: 600px) {
   .profile-card { flex-direction: column; gap: 1rem; }
   .profile-info h1 { font-size: 1.5rem; }
-  .profile-avatar { width: 60px; height: 60px; min-width: 60px; font-size: 1.1rem; }
+  .profile-avatar-img { 
+    width: 70px; 
+    height: 70px; 
+    min-width: 70px;
+    display: block;
+  }
   .timeline-item { flex-direction: column; gap: 0.25rem; }
   .timeline-period { min-width: unset; }
   .filter-bar { flex-direction: column; }
