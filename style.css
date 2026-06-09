@@ -223,8 +223,9 @@ body {
   border-color: var(--accent);
   color: white;
 }
-.lang-btn:hover:not(.active) { border-color: var(--accent-mid); }
-
+.lang-btn:hover:not(.active) { 
+  border-color: #9c27b0; 
+}
 /* REPOS GRID */
 .repos-grid {
   display: grid;
@@ -243,8 +244,8 @@ body {
   transition: box-shadow 0.2s, border-color 0.2s;
 }
 .repo-card:hover {
-  border-color: var(--accent-mid);
-  box-shadow: 0 2px 12px rgba(83,74,183,0.08);
+  border-color: #9c27b0;
+  box-shadow: 0 2px 12px rgba(156, 39, 176, 0.15);
 }
 
 .repo-name {
